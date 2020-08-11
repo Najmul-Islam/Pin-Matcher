@@ -59,6 +59,7 @@
         </div>
 
         <script>
+
             //Generate Pin Button
 
             let generateBtn = document.getElementById("generate-btn");
@@ -72,16 +73,8 @@
                 return Math.floor(Math.random() * (number2 - number1) + number1);
             }
 
-            //Keybord Section
-            // const numOne = document.getElementById("one");
-            // numOne.addEventListener("click", function () {
-            //     const numOneValue = document.getElementById("one").innerText;
-            //     document.getElementById("inputNum").value += numOneValue;
-
-            //     keyWord(1);
-            // })
-
             // Function for Number Plate 
+
             function keyWord(value) {
                 document.getElementById("num-input").value += value;
             }
@@ -90,12 +83,6 @@
 
             const clearAll = document.getElementById("clear-all");
             clearAll.addEventListener("click", function () {
-                // const clearValueInput = document.getElementById("num-input").value = "";
-                // const clearMach = document.getElementById("pin-mathch");
-                // clearMach.style.display = "none";
-                // const clearUnmach = document.getElementById("pin-unmathch");
-                // clearUnmach.style.display = "none"
-
                 clearAllValue();
             })
 
