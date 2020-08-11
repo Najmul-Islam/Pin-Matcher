@@ -46,7 +46,7 @@
                             </div>
                             <div>
                                 <button id="submit" type="submit" class="submit-btn">Submit</button>
-                                <p class="action-left">3 try left</p>
+                                <p id="action-left" class="action-left">3 try left</p>
                             </div>
                         </div>
                     </div>
@@ -104,12 +104,14 @@
                 if (generateInput == numInput) {
                     const pinMathch = document.getElementById("pin-mathch");
                     pinMathch.style.display = "block";
+                    const actionLeft = document.getElementById("action-left");
+                    actionLeft.style.display = "none";
                 }
                 else {
                     const pinUnmathch = document.getElementById("pin-unmathch");
                     pinUnmathch.style.display = "block";
-                    const tryNote = document.getElementById("try-note");
-                    tryNote.style.display = "block";
+                    const actionLeft = document.getElementById("action-left");
+                    actionLeft.style.display = "block";
                 }
             })
 
